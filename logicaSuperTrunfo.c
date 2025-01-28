@@ -2,25 +2,21 @@
 #include <stdlib.h>
 int main()
 {
-	char Carta[3];
-	char Estado[50], Nome[30];
-	char CARTA2[3];
-	int Populacao, Pturismo; 
-	char ESTADO2[50], NOME2[30];
-	int POPULACAO2, PTURISMO2, escolha; 
-	float Area, Pib;
-	float AREA2, PIB2;
+	char Carta[3], CARTA2[3];
+	char Estado[30], Nome[30], ESTADO2[30], NOME2[30];
+	int Populacao, Pturismo, POPULACAO2, PTURISMO2, escolha; 
+	float Area, Pib, AREA2, PIB2;
 
 	printf("Vez do jogador 1\n");
 
 	printf("Digite o primeiro Nome do Estado: ");
-	scanf(" %s", &Estado);
+	scanf(" %[^\n]", &Estado);
 
 	printf("Digite o Codigo da Carta: ");
 	scanf(" %s", &Carta);
 
 	printf("Digite o Nome da Cidade: ");
-	scanf(" %s", &Nome);
+	scanf(" %[^\n]", &Nome);
 
 	printf("Digite o Número de habitantes: ");
 	scanf(" %d", &Populacao);
@@ -34,40 +30,21 @@ int main()
 	printf("Digite o Número de Pontos Turísticos: ");
 	scanf(" %d", &Pturismo);
 
+   getchar();
 	
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-
-
+	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
 	printf("Vez do segundo jogador 2\n");
 	
 	printf("Digite o Nome do Estado: ");
-	scanf(" %s", &Estado);
+	scanf(" %[^\n]", &ESTADO2);
 
 
 	printf("Digite o Codigo da Carta: ");
 	scanf(" %s", &CARTA2);
 
 	printf("Digite o Nome da Cidade: ");
-	scanf(" %s", &NOME2);
+	scanf(" %[^\n]", &NOME2);
 
 	printf("Digite o Número de habitantes: ");
 	scanf(" %d", &POPULACAO2);
@@ -80,27 +57,7 @@ int main()
 
 	printf("Digite o Número de Pontos Turísticos: ");
 	scanf(" %d", &PTURISMO2);
-
-	
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
-	printf("\n");
+	printf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 
    printf("escolha atributo a ser comparado:\n");
    printf("1. População\n");
@@ -118,7 +75,7 @@ if (Populacao) {
 	if (Populacao > POPULACAO2) {
 		printf("Jogador 1 ganhou\n");
 		printf("Carta Campeãm\n");
-		printf("Estado: %s\n", Estado);
+		printf("Estado: %s \n", Estado);
 	    printf("Codigo da carta: %s\n", Carta);
 	    printf("Nome da Cidade: %s\n", Nome);
 	    printf("População: %d\n", Populacao);
@@ -128,7 +85,7 @@ if (Populacao) {
 	} else {
 		printf("Jogador 2 ganhou\n");
 		printf("Carta campeãm\n");
-		printf("Estado: %s\n", ESTADO2);
+		printf("Estado: %s \n", ESTADO2);
 	    printf("Codigo da carta: %s\n", CARTA2);
 	    printf("Nome da Cidade: %s\n", NOME2);
 	    printf("População: %d\n", POPULACAO2);
